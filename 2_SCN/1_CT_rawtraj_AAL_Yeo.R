@@ -6,11 +6,11 @@ library(ggplot2)
 library(tidyr)
 library(dplyr)
 library(emmeans)
-setwd("...") #Sets the working directory to the Desktop
+setwd("/Users/zhaoyuyao/Desktop/Cohen_lab/EBDS/structural_analysis/1_clean_data") #Sets the working directory to the Desktop
 
 #import csvs
 #import csv files
-combined_df <- read.csv("CT_train_CS_T1_no_MVM_AAL_globZ2.csv")
+combined_df <- read.csv("CT_only_CS_T1_no_MVM_AAL_regROI_globZ2_train.csv")
 matwhole <- combined_df[,4:81]
 
 ## plot CT by Yeo2011 (whole brain) ----------------------
